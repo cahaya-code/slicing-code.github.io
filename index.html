@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="#" method="POST">
+        <!-- First Name and Last Name Fields -->
+        <div class="name-group">
+          <div>
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div>
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+        </div>
+
+        <!-- Email Field -->
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Query Type Radio Buttons -->
+        <div class="radio-group">
+          <div class="radio-container">
+            <label>
+              <input type="radio" name="inquiry-type" value="general" />
+              General Enquiry
+            </label>
+            <div class="radio-option">
+              <label>Subject</label>
+              <input type="text" placeholder="Enter subject" />
+
+              <label>Message</label>
+              <textarea placeholder="Enter your message"></textarea>
+            </div>
+          </div>
+
+          <div class="radio-container">
+            <label>
+              <input type="radio" name="inquiry-type" value="support" />
+              Support Request
+            </label>
+            <div class="radio-option">
+              <label>Order Number</label>
+              <input type="text" placeholder="Enter order number" />
+
+              <label>Issue Type</label>
+              <input type="text" placeholder="Enter issue type" />
+
+              <label>Description</label>
+              <textarea placeholder="Describe your issue"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Message Field -->
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <!-- Consent Checkbox -->
+        <label class="consent">
+          <input type="checkbox" name="consent" required /> I consent to being
+          contacted by the team *
+        </label>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

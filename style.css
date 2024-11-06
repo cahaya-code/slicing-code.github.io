@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eaf2ec;
+}
+
+.contact-form {
+  background-color: #ffff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5em;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.name-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.name-group div {
+  flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.radio-container input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.radio-container label::before,
+.radio-container label::after {
+  display: none;
+}
+
+/* Mengubah warna radio button saat diklik */
+.radio-container input[type="radio"]:checked {
+  accent-color: #007a5e;
+}
+
+/* Mengubah warna teks label saat radio button diklik */
+.radio-container input[type="radio"]:checked + label {
+  color: #007a5e;
+}
+
+/* Styling untuk radio group container */
+.radio-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+/* Styling untuk setiap opsi radio */
+.radio-option {
+  display: none;
+}
+
+/* Styling untuk container setiap opsi */
+.radio-container {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 48px;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.consent {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.consent input {
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007a5e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f47;
+}
+
+input[type="checkbox"] {
+  accent-color: #007a5e;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .name-group {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
